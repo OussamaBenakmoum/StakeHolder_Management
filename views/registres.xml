@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+
+    <record id="display_stakeholders_action" model="ir.actions.act_window" >
+        <field name="name">Liste des parties prenantes</field>
+        <field name="type">ir.actions.act_window</field>
+        <field name="res_model">register.stakeholder</field>
+        <field name="view_mode">tree,kanban,form</field>
+    </record>
+        <menuitem id="Stakeholder_register_menu_btn" name="Stakeholders Register" sequence="10"/>
+    <menuitem id="liste_demande_root" name="Parties prenantes" parent="Stakeholder_register_menu_btn"
+              action="display_stakeholders_action" sequence="10"/>
+
+</odoo>

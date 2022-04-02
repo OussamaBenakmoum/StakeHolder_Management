@@ -9,19 +9,17 @@
 # //////////////////////////////////////////////////////////////////////////////
 
 {
-    'name': "Stackeholder Management",
+    'name': "Stakeholder Management",
     'version': '1.0.0',
     'summary': """Gestion des parties prenantes""",
     'description': """
        Module de gestion du registre des parties prenantes, TP pour un module de gestion de changement dans un projet.
     """,
     'author': 'BENAKMOUME Oussama AND TAHAR Noureddine',
-    'company': 'ESI Alger',
+    'company': 'ESI Alger groupe = SIT4',
     'depends': [],
     'data': [
-        'views/',
-        'security/ir.model.access.csv',
-
+        'views/registres.xml'
     ],
     'demo': [],
     'images': [],
