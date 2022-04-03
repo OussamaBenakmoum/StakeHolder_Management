@@ -7,7 +7,77 @@
         <field name="res_model">register.stakeholder</field>
         <field name="view_mode">tree,kanban,form</field>
     </record>
-        <menuitem id="Stakeholder_register_menu_btn" name="Stakeholders Register" sequence="10"/>
+
+    <record id="holders_treeview" model="ir.ui.view" >
+         <field name="name">register.stakeholder.tree</field>
+         <field name="model">register.stakeholder</field>
+         <field name="arch" type="xml">
+            <tree>
+                <field name="name"/>
+                <field name="type"/>
+                <field name="role"/>
+                <field name="interet"/>
+                <field name="pouvoir"/>
+                <field name="contact"/>
+            </tree>
+        </field>
+    </record>
+
+
+    <record id="demandes_formview" model="ir.ui.view" >
+         <field name="name">register.stakeholder.form</field>
+         <field name="model">register.stakeholder</field>
+         <field name="arch" type="xml">
+            <form>
+                <sheet>
+                    <group>
+                      <group>  <field name="name"/></group>
+                      <group>  <field name="user_id"/></group>
+                    </group>
+                    <group>
+                        <field name="project"/>
+                    </group>
+                    <group>
+                      <group>  <field name="type"/></group>
+                       <group> <field name="role"/></group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="interet"/>
+                        </group>
+                        <group>
+                            <field name="pouvoir"/>
+                        </group>
+                    </group>
+                    <group>
+                        <group>
+                            <field name="strategie"/>
+                        </group>
+                        <group>
+                            <field name="contribution"/>
+                        </group>
+                    </group>
+                    <group>
+                            <field name="attente"/>
+                    </group>
+                    <group>
+                            <field name="actions"/>
+                    </group>
+                    <group>
+                            <field name="contact"/>
+                    </group>
+                </sheet>
+                <div class="oe_chatter">
+                    <field name="message_follower_ids"/>
+                    <field name="message_ids"/>
+                </div>
+
+            </form>
+        </field>
+    </record>
+
+    <menuitem id="Stakeholder_register_menu_btn" name="Stakeholders Register" sequence="10"/>
+
     <menuitem id="liste_demande_root" name="Parties prenantes" parent="Stakeholder_register_menu_btn"
               action="display_stakeholders_action" sequence="10"/>
 

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+       <!-- <record id="groupe_partie_prenante" model="res.groups">
+
+                <field name="name">Partie prenante</field>
+        </record>
+
+        <record model="ir.rule" id="demande_rule">
+                <field name="name">Droits d'accès d'une partie prenate</field>
+                <field name="model_id" ref="model_register_stakeholder"/>
+                <field name="domain_force">[('user_id','=',user.id)]</field>
+                <field name="groups" eval="[(4,ref('groupe_partie_prenante'))]"/>
+        </record>-->
+
+</odoo>

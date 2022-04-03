@@ -3,7 +3,7 @@
 #
 #    ESI ALger.
 #
-#    Copyright (C) 2020-TODAY Emploitic(<https://www.emploitic.com>).
+#    Copyright (C) 2022-TODAY.
 #    Author: Oussama BENAKMOUME && TAHAR Noureddine,
 #
 # //////////////////////////////////////////////////////////////////////////////
@@ -17,9 +17,11 @@
     """,
     'author': 'BENAKMOUME Oussama AND TAHAR Noureddine',
     'company': 'ESI Alger groupe = SIT4',
-    'depends': [],
+    'depends': ['mail','project'],
     'data': [
-        'views/registres.xml'
+        'views/registres.xml',
+        'security/ir.model.access.csv',
+        'security/security.xml',
     ],
     'demo': [],
     'images': [],

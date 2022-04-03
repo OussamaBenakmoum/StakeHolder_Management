@@ -1,0 +1,3 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+
+access_register_stakeholder,access.register.stakeholder,model_register_stakeholder,,1,1,1,1
