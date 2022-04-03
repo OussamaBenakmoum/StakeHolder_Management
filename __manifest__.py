@@ -17,7 +17,7 @@
     """,
     'author': 'BENAKMOUME Oussama AND TAHAR Noureddine',
     'company': 'ESI Alger groupe = SIT4',
-    'depends': ['mail','project'],
+    'depends': ['mail','project','calendar'],
     'data': [
         'views/registres.xml',
         'security/ir.model.access.csv',

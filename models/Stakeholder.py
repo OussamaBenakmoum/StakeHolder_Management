@@ -5,11 +5,11 @@ from datetime import datetime, timedelta
 
 class Stakeholder(models.Model):
     _name = 'register.stakeholder'
-    #_inherit = ["res.partner"]
     _inherit = ["mail.thread"]
-    #channel_ids = fields.Many2many('mail.channel', 'mail_channel_profile_partner', 'partner_id', 'channel_id', copy=False)
     _description = 'Une partie prenante'
+
     name = fields.Char(string="Nom", required=True)
+
     user_id = fields.Many2one('res.users',
                               string='Compte associé',
                               default=lambda self: self.env.uid, help="Check that the account is already created, and that you gave it the access rights")
